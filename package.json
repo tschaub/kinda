@@ -1,0 +1,20 @@
+{
+  "name": "kinda",
+  "version": "0.0.0",
+  "description": "Checks if a string kinda matches another",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "lab --threshold 100 test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "code": "^3.0.2",
+    "eslint": "^3.5.0",
+    "eslint-config-tschaub": "^5.0.0",
+    "lab": "^11.0.1"
+  },
+  "eslintConfig": {
+    "extends": "tschaub"
+  }
+}
