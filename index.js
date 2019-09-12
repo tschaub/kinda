@@ -1,4 +1,4 @@
-var UNWORD_RE = /\W/g;
+const UNWORD_RE = /\W/g;
 
 /**
  * Determines if one string matches another.  The "needle" string matches if
@@ -12,20 +12,20 @@ var UNWORD_RE = /\W/g;
 function match(needle, haystack) {
   needle = needle.replace(UNWORD_RE, '').toLowerCase();
   haystack = haystack.replace(UNWORD_RE, '').toLowerCase();
-  var needleLength = needle.length;
-  var haystackLength = haystack.length;
+  const needleLength = needle.length;
+  const haystackLength = haystack.length;
   if (needleLength === 0 || needleLength > haystackLength) {
     return 0;
   }
   if (needleLength === haystackLength) {
     return needle === haystack ? 1 : 0;
   }
-  var firstMatch = 0;
-  var haystackIndex = 0;
-  outer: for (var needleIndex = 0; needleIndex < needleLength; ++needleIndex) {
-    var needleLetter = needle.charCodeAt(needleIndex);
+  let firstMatch = 0;
+  let haystackIndex = 0;
+  outer: for (let needleIndex = 0; needleIndex < needleLength; ++needleIndex) {
+    const needleLetter = needle.charCodeAt(needleIndex);
     while (haystackIndex < haystackLength) {
-      var haystackLetter = haystack.charCodeAt(haystackIndex);
+      const haystackLetter = haystack.charCodeAt(haystackIndex);
       haystackIndex += 1;
       if (needleLetter === haystackLetter) {
         if (!firstMatch) {
