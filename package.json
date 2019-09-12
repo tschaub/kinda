@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Checks if a string kinda matches another",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/openlayers/openlayers.git"
