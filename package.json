@@ -3,16 +3,20 @@
   "version": "1.0.1",
   "description": "Checks if a string kinda matches another",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/openlayers/openlayers.git"
+  },
   "scripts": {
     "pretest": "eslint .",
     "test": "lab --threshold 100 test.js"
   },
   "license": "MIT",
   "devDependencies": {
-    "code": "^3.0.2",
-    "eslint": "^3.5.0",
-    "eslint-config-tschaub": "^5.0.0",
-    "lab": "^11.0.1"
+    "@hapi/code": "^6.0.0",
+    "@hapi/lab": "^20.2.2",
+    "eslint": "^6.3.0",
+    "eslint-config-tschaub": "^13.1.0"
   },
   "eslintConfig": {
     "extends": "tschaub"
